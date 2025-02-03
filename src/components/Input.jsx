@@ -44,7 +44,7 @@ const Input = ({ list, setList }) => {
         return;
       }
       const updatedList = list.map((e) => {
-        if (isExist()) {
+        if (e.name === nation) {
           return newNation;
         } else {
           return e;
